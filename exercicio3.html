@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+  <title> logica programacao </title>
+  <head>
+    <script>
+      var drofo = ["anel da invisibilidade", "botas mágicas", "botas magicas", "poção do sono", "poção da inocência", "poção da inocência"];
+      var topper = ["capa da invisibilidade", "pedra do despertar", "varinha das varinhas", "poção da mentira", "poção da mentira", "poção anti-inteligência"];
+
+      
+      topper.splice(4,1) //usou a poção
+      topper.splice(1,1) //perdeu a pedra
+      drofo.splice(1,1) // deu a bota para topper
+      topper.push("botas mágicas", "escudo mágico", "espada mágica") //ganhou
+
+      drofo.push("botas mágicas") //ganhou
+      drofo.splice(2,1) //usou poção sono
+      topper.splice(3,1) //usou poção anti-inteligência
+      drofo.push("ovo de dragão", "coxinha") //ganhou
+      
+      document.write("inventário drofo: " + drofo + "<br>")
+      document.write("inventário topper: " + topper)
+
+    </script>
+  </head>
+</html>
